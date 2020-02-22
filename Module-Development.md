@@ -1,6 +1,6 @@
 Modules are contained in the **./lib/modules/* ** folder. The template.py file has detailed information on a module's structure and what it should contain:
 
-[[/Images/empire_template.png|align=center]]
+[[https://github.com/EmpireProject/Empire/wiki/Images/empire_template.png|align=center]]
 
 Additional options go in self.options after the **Agent** argument. A module like **./lib/modules/situational_awareness/userhunter.py** has an example of this. If the argument is required for execution, set Required to True, and if you want a default value filled, set Value.
 
