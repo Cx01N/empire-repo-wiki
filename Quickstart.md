@@ -8,7 +8,7 @@ Running `./empire` will start Empire, and `./empire --debug` will generate a ver
 ## Main Menu
 Once you hit the main menu, you'll see the number of active agents, listeners, and loaded modules.
 
-[[/Images/empire_main_menu.png|align=center]]
+[[https://github.com/EmpireProject/Empire/wiki/Images/empire_main_menu.png|align=center]]
 
 The **help** command should work for all menus, and almost everything that can be tab-completable is (menu commands, agent names, local file paths where relevant, etc.).
 
@@ -17,7 +17,7 @@ You can ctrl+C to rage quit at any point. Starting Empire back up should preserv
 ## Listeners 101
 The first thing you need to do it set up a local listener. The **listeners** command will jump you to the listener management menu. Any active listeners will be displayed, and this information can be redisplayed at any time with the **list** command. The `uselistener` command will allow you to select the type of listener. Hitting TAB after this command will show all available listener types. The info command will display the currently set listener options.
 
-[[/Images/empire_listeners_menu.png|align=center]]
+[[https://github.com/EmpireProject/Empire/wiki/Images/empire_listeners_menu.png|align=center]]
 
 The info command will display the currently configured listener options. Set your host/port by doing something like set Host http://192.168.52.142:8081. This is tab-completable, and you can also use domain names here). The port will automatically be pulled out, and the backend will detect if you're doing a HTTP or HTTPS listener. For HTTPS listeners, you must first set the CertPath to be a local .pem file. The provided **./setup/cert.sh** script will generate a self-signed cert and place it in **./data/empire.pem**.
 
@@ -33,7 +33,7 @@ For UserAgent and proxy options, default uses the system defaults, none clears t
 ## Agents 101
 You should see a status message when an agent checks in (i.e. [+] Initial agent CGUBKC1R3YLHZM4V from 192.168.52.168 now active). Jump to the Agents menu with **agents**. Basic information on active agents should be displayed. Various commands can be executed on specific agent IDs or **all** from the agent menu, i.e. **kill all**. To interact with an agent, use **interact AGENT_NAME**. Agent names should be tab-completable for all commands.
 
-[[/Images/empire_agent_checkin.png|align=center]]
+[[https://github.com/EmpireProject/Empire/wiki/Images/empire_agent_checkin.png|align=center]]
 
 In an Agent menu, **info** will display more detailed agent information, and help will display all agent commands. If a typed command isn't resolved, Empire will try to interpret it as a shell command (like ps). You can **cd** directories, **upload/download** files, and **rename NEW_NAME**.
 
@@ -46,7 +46,7 @@ To see available modules, type **usemodule [tab]**. To search module names/descr
 
 To use a module, for example share finder from PowerView, type **usemodule situational_awareness/network/sharefinder** and press enter. info will display all current module options.
 
-[[/Images/empire_module_menu.png|align=center]]
+[[https://github.com/EmpireProject/Empire/wiki/Images/empire_module_menu.png|align=center]]
 
 To set an option, like the domain for sharefinder, use **set Domain testlab.local**. The Agent argument is always required, and should be auto-filled from jumping to a module from an agent menu. You can also **set Agent [tab]** to tab-complete an agent name. **execute** will task the agent to execute the module, and **back** will return you to the agent's main menu. Results will be displayed as they come back.
 
