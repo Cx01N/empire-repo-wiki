@@ -1,4 +1,12 @@
-# Install
+# Kali
+
+You can install the latest version of Empire by running the following:
+
+```sh
+apt install powershell-empire
+```
+
+# Github
 
 To install and run:
 
