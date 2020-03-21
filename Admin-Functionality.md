@@ -36,7 +36,7 @@ curl --insecure -i -H "Content-Type: application/json" https://localhost:1337/ap
 
 **Request**:
 ```bash
-curl --insecure -i -H "Content-Type: application/json" https://localhost:1337/api/admin/logout-X POST
+curl --insecure -i -H "Content-Type: application/json" https://localhost:1337/api/admin/logout -X POST
 ```
 
 **Response**:
