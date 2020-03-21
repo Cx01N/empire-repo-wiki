@@ -1,5 +1,3 @@
-# Listeners
-
 * [Get Current Listeners](#get-current-listeners)
 * [Get Listener by Name](#get-listener-by-name)
 * [Get Current Listener Options](#get-current-listener-options)
