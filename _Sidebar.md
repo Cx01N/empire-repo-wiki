@@ -8,7 +8,7 @@
 ## I- Modules
 1. [[Code Execution|Code-Execution]]
 1. [[Collection|Collection]]
-1. [[Credentials|Credentials]]
+1. [[Credentials|Getting-Credentials]]
 1. [[Exfiltration|Exfiltration]]
 1. [[Exploitation|Exploitation]]
 1. [[Lateral Movement|Lateral-Movement]]
@@ -26,6 +26,7 @@
 1. [[Stagers|Stagers]]
 1. [[Agents|Agents]]
 1. [[Modules|Modules]]
+1. [[Credentials|Credentials]]
 
 ## I- Advanced
 1. [[Module Development|Module-Development]]
