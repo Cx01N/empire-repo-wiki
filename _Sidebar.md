@@ -23,6 +23,7 @@
 1. [[RestFul API|RESTful-API]]
 1. [[Admin Functionality|Admin-Functionality]]
 1. [[Listeners|Listeners]]
+1. [[Stagers|Stagers]]
 
 ## I- Advanced
 1. [[Module Development|Module-Development]]
