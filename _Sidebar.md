@@ -27,6 +27,7 @@
 1. [[Agents|Agents]]
 1. [[Modules|Modules]]
 1. [[Credentials|Credentials]]
+1. [[Reporting|Reporting]]
 
 ## I- Advanced
 1. [[Module Development|Module-Development]]
