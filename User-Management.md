@@ -1,6 +1,7 @@
 * [Display All Users](#Display-All-Users)
 * [Current User](#Current-Users)
 * [Create New User](#Create-New-Users)
+* [Disable User](#Disable-User)
 
 ## Display All Users
 
@@ -14,7 +15,7 @@
 
 **Request**:
 ```bash
-curl --insecure -i -H "Content-Type: application/json"  -X GET -d https://localhost:1337/api/users?token=oa2vqer0si0rhehvwgvg3ncgec06hlb5ts58hmle
+curl --insecure -i -H "Content-Type: application/json" https://localhost:1337/api/users?token=oa2vqer0si0rhehvwgvg3ncgec06hlb5ts58hmle
 ```
 
 **Response**:
@@ -44,7 +45,7 @@ curl --insecure -i -H "Content-Type: application/json"  -X GET -d https://localh
 
 **Request**:
 ```bash
-curl --insecure -i -H "Content-Type: application/json" -X POST -d https://localhost:1337/api/users/me?token=oa2vqer0si0rhehvwgvg3ncgec06hlb5ts58hmle
+curl --insecure -i -H "Content-Type: application/json" https://localhost:1337/api/users/me?token=oa2vqer0si0rhehvwgvg3ncgec06hlb5ts58hmle  -X POST
 ```
 
 **Response**:
@@ -71,7 +72,7 @@ curl --insecure -i -H "Content-Type: application/json" -X POST -d https://localh
 
 **Request**:
 ```bash
-curl --insecure -i -H "Content-Type: application/json" -X POST -d https://localhost:1337/api/users?token=oa2vqer0si0rhehvwgvg3ncgec06hlb5ts58hmle '{"username":"user", "password":"pass"}'
+curl --insecure -i -H "Content-Type: application/json" https://localhost:1337/api/users?token=oa2vqer0si0rhehvwgvg3ncgec06hlb5ts58hmle -X POST -d '{"username":"user", "password":"pass"}'
 ```
 
 **Response**:
@@ -83,5 +84,27 @@ curl --insecure -i -H "Content-Type: application/json" -X POST -d https://localh
     "id": 1,
     "last_logon_time": "2020-03-21 18:57:36",
     "username": "empireadmin"
+}
+```
+
+## Disable User
+
+### Handler
+
+* **Handler** : PUT /api/users/UID/disable
+* Description : Disables a users account from their UID.
+* No parameters
+
+### Example
+
+**Request**:
+```bash
+curl --insecure -i -H "Content-Type: application/json" https://localhost:1337/api/users/1/disable?token=oa2vqer0si0rhehvwgvg3ncgec06hlb5ts58hmle -X PUT
+```
+
+**Response**:
+```json
+{
+    "success": true,
 }
 ```
