@@ -28,6 +28,7 @@
 1. [[Modules|Modules]]
 1. [[Credentials|Credentials]]
 1. [[Reporting|Reporting]]
+1. [[User Management|User-Management]]
 
 ## I- Advanced
 1. [[Module Development|Module-Development]]
