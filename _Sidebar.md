@@ -1,11 +1,11 @@
-## I- Overview
+## I - Overview
 1. [[Quick Start|Quickstart]]
 1. [[Architecture|Architecture]]
 1. [[Staging|Staging]]
 1. [[Installation|Installation]]
 1. [[Configuration|Configuration]]
 
-## II- Modules
+## II - Modules
 1. [[Code Execution|Code-Execution]]
 1. [[Collection|Collection]]
 1. [[Credentials|Getting-Credentials]]
@@ -19,7 +19,7 @@
 1. [[Situational Awareness|Situational-Awareness]]
 1. [[TrollSploit|TrollSploit]]
 
-## III- RESTful API
+## III - RESTful API
 1. [[RestFul API|RESTful-API]]
 1. [[Admin Functionality|Admin-Functionality]]
 1. [[Listeners|Listeners]]
@@ -30,5 +30,5 @@
 1. [[Reporting|Reporting]]
 1. [[User Management|User-Management]]
 
-## IV- Advanced
+## IV - Advanced
 1. [[Module Development|Module-Development]]
