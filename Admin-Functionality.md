@@ -1,5 +1,3 @@
-# Admin Functionality
-
 * [User Login](#User-Login)
 * [User Logout](#User-Logout)
 * [Restart the RESTful API Server](#restart-the-restful-api-server)
