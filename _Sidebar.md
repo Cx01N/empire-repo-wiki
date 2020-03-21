@@ -24,6 +24,7 @@
 1. [[Admin Functionality|Admin-Functionality]]
 1. [[Listeners|Listeners]]
 1. [[Stagers|Stagers]]
+1. [[Agents|Agents]]
 
 ## I- Advanced
 1. [[Module Development|Module-Development]]
