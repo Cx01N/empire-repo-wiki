@@ -161,17 +161,17 @@ curl --insecure -i https://localhost:1337/api/config?token=ks23jlvdki4fj1j23w39h
 
 ## Admin Functionality
 
-* [Get Session Token](#get-session-token)
-* [Get Permanent Session Token](#get-permanent-session-token)
+* [User Login](#User-Login)
+* [User Logout](#User-Logout)
 * [Restart the RESTful API Server](#restart-the-restful-api-server)
 * [Shutdown the RESTful API Server](#shutdown-the-restful-api-server)
 
-### Get Session Token
+### User Login
 
 #### Handler
 
-* **Handler** : GET /api/login
-* Description : Logs into the API and gets the current session token.
+* **Handler** : POST /api/admin/login
+* Description : Retrieves the API token given the correct username and password.
 * No parameters
 
 #### Example
@@ -187,29 +187,27 @@ curl --insecure -i -H "Content-Type: application/json" https://localhost:1337/ap
   "token": "ks23jlvdki4fj1j23w39h0h0xcuwjrqilocxd6b5"
 }
 ```
-
-### Get Permanent Session Token
+### User Logout
 
 #### Handler
 
-* **Handler** : GET /api/permanenttoken
-* Description : Gets the permanent session token, reusable without login. Doesn't change on API restart.
+* **Handler** : POST /api/admin/logout
+* Description : Logs out of current user account.
 * No parameters
 
 #### Example
 
 **Request**:
 ```bash
-curl --insecure -i https://localhost:1337/api/admin/permanenttoken?token=ks23jlvdki4fj1j23w39h0h0xcuwjrqilocxd6b5
+curl --insecure -i -H "Content-Type: application/json" https://localhost:1337/api/admin/logout-X POST
 ```
 
 **Response**:
 ```json
 {
-  "token": "gi5afo3umac6c0..."
+  "success": "True"
 }
 ```
-
 ### Restart the RESTful API Server
 
 #### Handler
