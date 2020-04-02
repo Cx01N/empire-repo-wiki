@@ -112,6 +112,22 @@ curl --insecure -i https://localhost:1337/api/version?token=ks23jlvdki4fj1j23w39
   "version": "1.5.0"
 }
 ```
+## Map Information
+
+### Handler
+
+* **Handler** : GET /api/map
+* Description : Returns list of all API routes.
+* No parameters
+
+### Example
+
+**Request**:
+```bash
+curl --insecure -i https://localhost:1337/api/map?token=ks23jlvdki4fj1j23w39h0h0xcuwjrqilocxd6b5
+```
+
+**Response**:
 
 
 ## Configuration Information
